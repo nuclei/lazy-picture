@@ -24,16 +24,17 @@
     "snazzy": "^8.0.0",
     "standard": "^12.0.1",
     "typescript": "^3.1.6",
-    "typescript-eslint-parser": "^21.0.1"
+    "typescript-eslint-parser": "^21.0.1",
+    "tslib": "^1.9.3"
   },
   "scripts": {
     "building": "npm test && rollup -c",
     "build": "npm run building && cp dist/lazyPicture.js docs/lazyPicture.js",
     "build:watch": "npm run building -- -w",
     "demo": "cp -r node_modules/@webcomponents/webcomponentsjs docs/polyfill",
-    "test": "standard src/*.ts --parser typescript-eslint-parser | snazzy"
-  },
-  "dependencies": {
-    "tslib": "^1.9.3"
+    "test": "standard src/*.ts --parser typescript-eslint-parser | snazzy",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist docs",
+    "postversion": "git push && git push --tags"
   }
 }
