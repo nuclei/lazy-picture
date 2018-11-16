@@ -1,7 +1,7 @@
 # Lazy Picture
 [![Spec Custom Elements V1](https://img.shields.io/badge/spec-custom%20elements%20v1-F52757.svg?style=flat-square)](https://www.w3.org/TR/custom-elements/)
-[![Build Status](https://img.shields.io/travis/nuclei/lazy-picture/master.svg?style=flat-square)](https://travis-ci.org/nuclei/lazy-picture) [![npm](https://img.shields.io/npm/v/lazy-picture.svg?style=flat-square)](https://www.npmjs.com/package/lazy-picture)
-[![Known Vulnerabilities](https://snyk.io/test/github/nuclei/lazy-picture/badge.svg?style=flat-square)](https://snyk.io/test/github/nuclei/lazy-picture) [![npm](https://img.shields.io/npm/dt/@nuclei-components/lazy-picture.svg?style=flat-square)](https://www.npmjs.com/package/lazy-picture) [![license](https://img.shields.io/github/license/nuclei/lazy-picture.svg?style=flat-square)](https://github.com/nuclei/lazy-picture/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/nuclei/lazy-picture/master.svg?style=flat-square)](https://travis-ci.org/nuclei/lazy-picture) [![npm](https://img.shields.io/npm/v/@nuclei-components/lazy-picture.svg?style=flat-square)](https://www.npmjs.com/package/@nuclei-components/lazy-picture)
+ [![npm](https://img.shields.io/npm/dt/@nuclei-components/lazy-picture.svg?style=flat-square)](https://www.npmjs.com/package/@nuclei-components/lazy-picture) [![license](https://img.shields.io/github/license/nuclei/lazy-picture.svg?style=flat-square)](https://github.com/nuclei/lazy-picture/blob/master/LICENSE)
 
 ## Installation
 Simply install the lazy-picture component using npm.
