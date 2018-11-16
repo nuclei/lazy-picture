@@ -1,15 +1,15 @@
 {
-  "name": "@nuclei-components/responsive-picture",
+  "name": "@nuclei-components/lazy-picture",
   "version": "0.0.1",
-  "description": "A responsive picture element with lazy loading",
-  "main": "dist/responsivePicture.js",
+  "description": "A lazy loading picture element",
+  "main": "dist/lazyPicture.js",
   "config": {
-    "src": "src/responsivePicture.ts"
+    "src": "src/lazyPicture.ts"
   },
   "keywords": [
     "vanilla web components",
-    "responsive image",
-    "responsive picture",
+    "lazy loading image",
+    "lazy loading picture",
     "picture element"
   ],
   "author": "Lukas Oppermann",
@@ -28,7 +28,7 @@
   },
   "scripts": {
     "building": "npm test && rollup -c",
-    "build": "npm run building && cp dist/responsivePicture.js docs/responsivePicture.js",
+    "build": "npm run building && cp dist/lazyPicture.js docs/lazyPicture.js",
     "build:watch": "npm run building -- -w",
     "demo": "cp -r node_modules/@webcomponents/webcomponentsjs docs/polyfill",
     "test": "standard src/*.ts --parser typescript-eslint-parser | snazzy"

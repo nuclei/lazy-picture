@@ -23,7 +23,7 @@
   "_resolved": "https://registry.npmjs.org/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.0.0.tgz",
   "_shasum": "f130b1abe23f4d56d6d6254259ff9e054ce70292",
   "_spec": "@webcomponents/webcomponentsjs",
-  "_where": "/Users/lukasoppermann/Code/responsive-image",
+  "_where": "/Users/lukasoppermann/Code/lazy-picture",
   "author": {
     "name": "The Polymer Authors"
   },

@@ -24,43 +24,13 @@
       height: auto;
       vertical-align: top;
       float: left;
-      max-width: none;
-      min-width: none;
-      max-height: none;
-      min-height: none;
-      height: 100%;
-      width: 100%;
       object-fit: cover;
-    }
-    :host([align="top"]) img{
-      object-position: center top;
-    }
-    :host([align="bottom"]) img{
-      object-position: center bottom;
-    }
-    :host([align="left"]) img{
-      object-position: left center;
-    }
-    :host([align="right"]) img{
-      object-position: right center;
-    }
-    :host([align="top-left"]) img{
-      object-position: left top;
-    }
-    :host([align="top-right"]) img{
-      object-position: right top;
-    }
-    :host([align="bottom-left"]) img{
-      object-position: left bottom;
-    }
-    :host([align="bottom-right"]) img{
-      object-position: right bottom;
     }
   </style>
   <slot></slot>
   <div id="content"></div>
 `;
-    class ResponsivePicture extends HTMLElement {
+    class lazyPicture extends HTMLElement {
         constructor() {
             super();
             this._active = undefined;
@@ -74,7 +44,7 @@
             this._content = null;
             let shadowRoot = this.attachShadow({ mode: 'open' });
             if (typeof ShadyCSS !== 'undefined') {
-                ShadyCSS.prepareTemplate(template, 'responsive-image');
+                ShadyCSS.prepareTemplate(template, 'lazy-picture');
                 ShadyCSS.styleElement(this);
             }
             shadowRoot.appendChild(document.importNode(template.content, true));
@@ -156,7 +126,7 @@
             this._threshold = threshold;
         }
     }
-    window.customElements.define('responsive-picture', ResponsivePicture);
+    window.customElements.define('lazy-picture', lazyPicture);
 
 }());
-//# sourceMappingURL=responsivePicture.js.map
+//# sourceMappingURL=lazyPicture.js.map

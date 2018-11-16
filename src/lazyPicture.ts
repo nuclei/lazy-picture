@@ -21,36 +21,12 @@ template.innerHTML = `<style>
       float: left;
       object-fit: cover;
     }
-    :host([align="top"]) img{
-      object-position: center top;
-    }
-    :host([align="bottom"]) img{
-      object-position: center bottom;
-    }
-    :host([align="left"]) img{
-      object-position: left center;
-    }
-    :host([align="right"]) img{
-      object-position: right center;
-    }
-    :host([align="top-left"]) img{
-      object-position: left top;
-    }
-    :host([align="top-right"]) img{
-      object-position: right top;
-    }
-    :host([align="bottom-left"]) img{
-      object-position: left bottom;
-    }
-    :host([align="bottom-right"]) img{
-      object-position: right bottom;
-    }
   </style>
   <slot></slot>
   <div id="content"></div>
 `
 
-class ResponsivePicture extends HTMLElement { // eslint-disable-line no-unused-vars
+class lazyPicture extends HTMLElement { // eslint-disable-line no-unused-vars
   /* Typescript: declare variables */
   private _active: string = undefined // eslint-disable-line no-undef
   private _img = null // eslint-disable-line no-undef
@@ -70,7 +46,7 @@ class ResponsivePicture extends HTMLElement { // eslint-disable-line no-unused-v
     let shadowRoot = this.attachShadow({ mode: 'open' })
     // check if polyfill is used
     if (typeof ShadyCSS !== 'undefined') {
-      ShadyCSS.prepareTemplate(template, 'responsive-image') // eslint-disable-line no-undef
+      ShadyCSS.prepareTemplate(template, 'lazy-picture') // eslint-disable-line no-undef
       // apply css polyfill
       ShadyCSS.styleElement(this) // eslint-disable-line no-undef
     }
@@ -201,4 +177,4 @@ class ResponsivePicture extends HTMLElement { // eslint-disable-line no-unused-v
   }
 }
 
-window.customElements.define('responsive-picture', ResponsivePicture)
+window.customElements.define('lazy-picture', lazyPicture)

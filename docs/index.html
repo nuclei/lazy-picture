@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Web Component Skeleton</title>
     <script src="polyfill/webcomponents-hi-sd-ce.js"></script>
-    <script src="./responsivePicture.js"></script>
+    <script src="./lazyPicture.js"></script>
     <style media="screen">
-      responsive-picture{
+      lazy-picture{
         min-height: 300px;
         background: lightblue;
         font-family: helvetica;
@@ -15,13 +15,13 @@
     </style>
   </head>
   <body>
-    <responsive-picture style="width: 100%;" id="pictureOne" src="trees.jpg" alt="test">
+    <lazy-picture id="pictureOne" src="trees.jpg" alt="test">
       <source media="(min-width: 799px)" srcset="nature-forest-trees-fog.jpeg">
-    </responsive-picture>
+    </lazy-picture>
     <div style="padding-top: 1000px;"></div>
-    <responsive-picture style="width: 100%;" offset="-200px" id="pictureOne" src="autumn-colorful-colourful-33109.jpg" alt="some more wood pictures">
+    <lazy-picture offset="-200px" src="autumn-colorful-colourful-33109.jpg" alt="some more wood pictures">
       <source media="(min-width: 799px)" srcset="color-conifer-environment-192136.jpg">
-    </responsive-picture>
+    </lazy-picture>
     <script>
       document.getElementById('pictureOne').addEventListener('loaded', (e) => {
         console.log(e, e.detail)
