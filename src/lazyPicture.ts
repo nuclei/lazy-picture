@@ -13,6 +13,7 @@ template.innerHTML = `<style>
     #content{
       display: flex;
       justify-content: center;
+      width: 100%;
     }
     img{
       width: 100%;
