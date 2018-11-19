@@ -15,6 +15,10 @@ template.innerHTML = `<style>
       justify-content: center;
       width: 100%;
     }
+    picture{
+      width: 100%;
+      height: auto;
+    }
     img{
       width: 100%;
       height: auto;
