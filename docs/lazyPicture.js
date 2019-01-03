@@ -26,7 +26,7 @@
     }
     img{
       width: 100%;
-      height: auto;
+      height: 100%;
       vertical-align: top;
       float: left;
       object-fit: cover;
