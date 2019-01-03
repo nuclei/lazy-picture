@@ -1,6 +1,6 @@
 {
   "name": "@nuclei-components/lazy-picture",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "A lazy loading picture element",
   "main": "dist/lazyPicture.js",
   "config": {
