@@ -44,6 +44,9 @@ If you use the *load when in viewport* functionality, you can use the `threshold
 ### Offset
 The `offset` property defines at what distance from the visible viewport, the image will be loaded. The default offset of `100px` means that as soon as the images is within `100px` of the viewport, it will be loaded. Set the offset to `0` to disable it.
 
+### Fit
+The `fit` property allows you to set the `object-fit` css property on the image element.
+
 ## Events
 ### loaded
 When an image is loaded the `loaded` event is fired. The event has the following details:

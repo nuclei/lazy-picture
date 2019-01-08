@@ -31,6 +31,18 @@
       float: left;
       object-fit: cover;
     }
+    :host([fit=contain]) img{
+      object-fit: contain;
+    }
+    :host([fit=fill]) img{
+      object-fit: fill;
+    }
+    :host([fit=none]) img{
+      object-fit: none;
+    }
+    :host([fit=scale-down]) img{
+      object-fit: scale-down;
+    }
   </style>
   <slot></slot>
   <div id="content"></div>

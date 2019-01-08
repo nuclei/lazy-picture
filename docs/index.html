@@ -6,6 +6,12 @@
     <script src="polyfill/webcomponents-hi-sd-ce.js"></script>
     <script src="./lazyPicture.js"></script>
     <style media="screen">
+      html{
+        margin: 0;
+      }
+      body{
+        margin: 10px;
+      }
       lazy-picture{
         min-height: 300px;
         background: lightblue;
@@ -15,7 +21,7 @@
     </style>
   </head>
   <body>
-    <lazy-picture id="pictureOne" src="trees.jpg" alt="test">
+    <lazy-picture id="pictureOne" src="trees.jpg" alt="test" style="height: calc(100vh - 20px)" fit="contain">
       <source media="(min-width: 799px)" srcset="nature-forest-trees-fog.jpeg">
     </lazy-picture>
     <div style="padding-top: 1000px;"></div>
