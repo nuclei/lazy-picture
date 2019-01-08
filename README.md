@@ -44,8 +44,8 @@ If you use the *load when in viewport* functionality, you can use the `threshold
 ### Offset
 The `offset` property defines at what distance from the visible viewport, the image will be loaded. The default offset of `100px` means that as soon as the images is within `100px` of the viewport, it will be loaded. Set the offset to `0` to disable it.
 
-### Fit
-The `fit` property allows you to set the `object-fit` css property on the image element.
+### Object fit
+The `fit` property allows you to set the `object-fit` css property on the image element. Alternativly you can define the `--lazy-picture-object-fit` css custom property to set the `object-fit`. Make sure to NOT set the `fit` property if you want to define the `object-fit` via the css property. The default value is `cover`.
 
 ## Events
 ### loaded

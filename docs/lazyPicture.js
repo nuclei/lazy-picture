@@ -14,6 +14,7 @@
     template.innerHTML = `<style>
     :host{
       display: flex;
+      --object-fit: var(--lazy-picture-object-fit, cover)
     }
     #content{
       display: flex;
@@ -29,19 +30,19 @@
       height: 100%;
       vertical-align: top;
       float: left;
-      object-fit: cover;
+      object-fit: var(--object-fit);
     }
-    :host([fit=contain]) img{
-      object-fit: contain;
+    :host([fit=contain]){
+      --object-fit: contain;
     }
     :host([fit=fill]) img{
-      object-fit: fill;
+      --object-fit: fill;
     }
     :host([fit=none]) img{
-      object-fit: none;
+      --object-fit: none;
     }
     :host([fit=scale-down]) img{
-      object-fit: scale-down;
+      --object-fit: scale-down;
     }
   </style>
   <slot></slot>
