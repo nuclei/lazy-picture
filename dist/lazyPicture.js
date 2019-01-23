@@ -32,7 +32,7 @@
       float: left;
       object-fit: var(--object-fit);
     }
-    :host([fit=conver]){
+    :host([fit=cover]){
       --object-fit: cover;
     }
     :host([fit=contain]){
