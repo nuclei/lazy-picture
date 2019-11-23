@@ -4,8 +4,8 @@
  [![npm](https://img.shields.io/npm/dt/@nuclei-components/lazy-picture.svg?style=flat-square)](https://www.npmjs.com/package/@nuclei-components/lazy-picture) [![license](https://img.shields.io/github/license/nuclei/lazy-picture.svg?style=flat-square)](https://github.com/nuclei/lazy-picture/blob/master/LICENSE)
 
 ## Archived due to upcoming native lazy loading
-Read about it here: https://addyosmani.com/blog/lazy-loading/
-Browser support: https://caniuse.com/#feat=loading-lazy-attr
+**Read about it here:** https://addyosmani.com/blog/lazy-loading/  
+**Browser support:** https://caniuse.com/#feat=loading-lazy-attr
 
 ## Installation
 Simply install the lazy-picture component using npm.
